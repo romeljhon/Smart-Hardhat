@@ -8,7 +8,7 @@ export function Hero() {
     <section className="relative w-full h-screen flex items-center justify-center bg-background overflow-hidden">
       <div className="absolute inset-0">
         <Image
-          src="https://picsum.photos/seed/site-panorama/1920/1080"
+          src="https://images.unsplash.com/photo-1519756301029-33921415ba28?q=80&w=1920&h=1080&fit=crop"
           alt="Construction background"
           fill
           className="object-cover"
@@ -41,22 +41,22 @@ export function Hero() {
                <div className="absolute -bottom-8 -right-8 w-[70%] h-[70%]">
                  <div className="relative w-full h-full transform -rotate-15">
                     <Image
-                      src="https://picsum.photos/seed/construction-team/600/450"
-                      alt="Construction workers"
+                      src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=600&h=450&fit=crop"
+                      alt="Construction workers group"
                       fill
                       className="object-cover rounded-3xl shadow-2xl"
-                      data-ai-hint="construction workers"
+                      data-ai-hint="construction workers group"
                     />
                  </div>
               </div>
               <div className="absolute -top-8 -left-8 w-[60%] h-[60%]">
                  <div className="relative w-full h-full transform rotate-15">
                     <Image
-                      src="https://picsum.photos/seed/architect-blueprint/600/450"
-                      alt="Architect looking at blueprints"
+                      src="https://images.unsplash.com/photo-1525983334256-17b0164a66a7?q=80&w=600&h=450&fit=crop"
+                      alt="Construction worker"
                       fill
                       className="object-cover rounded-3xl shadow-2xl"
-                      data-ai-hint="architect blueprints"
+                      data-ai-hint="construction worker"
                     />
                  </div>
               </div>
