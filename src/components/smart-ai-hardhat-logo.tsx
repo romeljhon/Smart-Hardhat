@@ -4,7 +4,7 @@ export function SmartAIHardhatLogo({ className }: { className?: string }) {
   return (
     <div className={className}>
       <Image 
-        src="/images/r.png" 
+        src="/img/r.svg" 
         alt="Smart AI Hardhat Logo" 
         width={200} 
         height={200}

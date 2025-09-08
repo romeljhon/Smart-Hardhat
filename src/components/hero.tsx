@@ -41,7 +41,7 @@ export function Hero() {
                <div className="absolute -bottom-8 -right-8 w-[70%] h-[70%]">
                  <div className="relative w-full h-full transform -rotate-15">
                     <Image
-                      src="https://picsum.photos/seed/workers-group/600/450"
+                      src="/img/r1.svg"
                       alt="Construction workers group"
                       fill
                       className="object-cover rounded-3xl shadow-2xl"
@@ -52,7 +52,7 @@ export function Hero() {
               <div className="absolute -top-8 -left-8 w-[60%] h-[60%]">
                  <div className="relative w-full h-full transform rotate-15">
                     <Image
-                      src="https://picsum.photos/seed/worker-rebar/600/450"
+                      src="/img/r2.svg"
                       alt="Construction worker with rebar"
                       fill
                       className="object-cover rounded-3xl shadow-2xl"
