@@ -8,7 +8,7 @@ export function Hero() {
     <section className="relative w-full h-screen flex items-center justify-center bg-background overflow-hidden">
       <div className="absolute inset-0">
         <Image
-          src="https://picsum.photos/seed/construction-bg/1920/1080"
+          src="https://picsum.photos/seed/site-panorama/1920/1080"
           alt="Construction background"
           fill
           className="object-cover"
@@ -34,29 +34,29 @@ export function Hero() {
 
           <div className="relative flex justify-center items-center h-full">
             <div className="absolute top-0 right-0 -mt-16 -mr-16">
-              <SmartAIHardhatLogo/>
+              <SmartAIHardhatLogo className="w-48 h-48" />
             </div>  
 
             <div className="relative w-full aspect-[4/3] mt-24">
                <div className="absolute -bottom-8 -right-8 w-[70%] h-[70%]">
                  <div className="relative w-full h-full transform -rotate-15">
                     <Image
-                      src="/img/r1.svg"
-                      alt="Construction workers group"
+                      src="https://picsum.photos/seed/construction-team/600/450"
+                      alt="Construction workers"
                       fill
                       className="object-cover rounded-3xl shadow-2xl"
-                      data-ai-hint="construction workers group"
+                      data-ai-hint="construction workers"
                     />
                  </div>
               </div>
               <div className="absolute -top-8 -left-8 w-[60%] h-[60%]">
                  <div className="relative w-full h-full transform rotate-15">
                     <Image
-                      src="/img/r2.svg"
-                      alt="Construction worker with rebar"
+                      src="https://picsum.photos/seed/architect-blueprint/600/450"
+                      alt="Architect looking at blueprints"
                       fill
                       className="object-cover rounded-3xl shadow-2xl"
-                      data-ai-hint="construction worker rebar"
+                      data-ai-hint="architect blueprints"
                     />
                  </div>
               </div>
