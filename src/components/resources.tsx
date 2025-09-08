@@ -1,32 +1,38 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Video, Camera, FileText, BookOpen, Wrench, Download } from 'lucide-react';
+import Link from 'next/link';
 
 const resourcesData = [
   {
     icon: <Video className="h-8 w-8 text-primary" />,
     title: 'Promotional Video',
     description: 'Watch our promo video to see the Smart Hardhat in action.',
+    href: '/resources/promotional-video',
   },
   {
     icon: <Camera className="h-8 w-8 text-primary" />,
     title: 'Product Photos',
     description: 'High-resolution isometric and orthographic photos.',
+    href: '/resources/product-photos',
   },
   {
     icon: <FileText className="h-8 w-8 text-primary" />,
     title: 'Full Product Description',
     description: 'A detailed document of all features and specifications.',
+    href: '/resources/product-description',
   },
   {
     icon: <BookOpen className="h-8 w-8 text-primary" />,
     title: 'Brochure',
     description: 'Download our official product brochure for a comprehensive overview.',
+    href: '/resources/brochure',
   },
   {
     icon: <Wrench className="h-8 w-8 text-primary" />,
     title: 'User Manual',
     description: 'The complete guide to setup, usage, and maintenance.',
+    href: '/resources/user-manual',
   },
 ];
 
@@ -52,10 +58,12 @@ export function Resources() {
                   </div>
                 </div>
                 <div className="mt-auto pt-4">
-                  <Button variant="outline" className="w-full">
-                    <Download className="mr-2 h-4 w-4" />
-                    Download
-                  </Button>
+                  <Link href={resource.href} className='w-full'>
+                    <Button variant="outline" className="w-full">
+                      <Download className="mr-2 h-4 w-4" />
+                      View
+                    </Button>
+                  </Link>
                 </div>
               </CardContent>
             </Card>
