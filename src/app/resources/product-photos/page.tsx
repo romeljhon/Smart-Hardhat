@@ -17,7 +17,7 @@ export default function ProductPhotosPage() {
               <div>
                 <h3 className="text-xl font-bold mb-4 text-white">Isometric</h3>
                 <Image
-                  src="https://picsum.photos/seed/hardhat-iso/600/400"
+                  src="https://images.unsplash.com/photo-1621999818292-71a73a7c6427?q=80&w=600&h=400&fit=crop"
                   alt="Smart Hardhat Isometric View"
                   width={600}
                   height={400}
@@ -28,7 +28,7 @@ export default function ProductPhotosPage() {
               <div>
                 <h3 className="text-xl font-bold mb-4 text-white">Orthographic</h3>
                 <Image
-                  src="https://picsum.photos/seed/hardhat-ortho/600/400"
+                  src="https://images.unsplash.com/photo-1581172351238-9b84b857a2c4?q=80&w=600&h=400&fit=crop"
                   alt="Smart Hardhat Orthographic View"
                   width={600}
                   height={400}
