@@ -34,7 +34,8 @@ export function Hero() {
 
           <div className="relative flex justify-center items-center h-full">
             <div className="absolute top-0 right-0 -mt-16 -mr-16">
-              <SmartAIHardhatLogo className="w-48 h-48" />
+              {/* <SmartAIHardhatLogo className="w-48 h-48" /> */}
+              <img src=''></img>
             </div>
 
             <div className="relative w-full aspect-[4/3] mt-24">
