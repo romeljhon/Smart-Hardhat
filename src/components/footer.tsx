@@ -9,11 +9,7 @@ export function Footer() {
                     <Logo className="h-6 w-6 text-primary" />
                     <span className="font-bold text-white">Smart Hardhat</span>
                 </div>
-                <p className="text-sm text-muted-foreground">© {new Date().getFullYear()} Smart Hardhat Inc. All rights reserved.</p>
-                <div className="flex gap-4 mt-4 md:mt-0">
-                    <Link href="#" className="text-sm text-muted-foreground hover:text-white">Privacy Policy</Link>
-                    <Link href="#" className="text-sm text-muted-foreground hover:text-white">Terms of Service</Link>
-                </div>
+                <p className="text-sm text-muted-foreground text-center md:text-left">© {new Date().getFullYear()} Smart Hardhat Inc. All rights reserved.</p>
             </div>
         </footer>
     )
