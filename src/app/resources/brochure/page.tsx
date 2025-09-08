@@ -20,7 +20,7 @@ export default function BrochurePage() {
             <CardContent className="p-0">
               <div className="grid md:grid-cols-3">
                 {/* Panel 1 */}
-                <div className="p-6 md:p-8 flex flex-col items-center text-center bg-[#1e3a8a] text-white">
+                <div className="p-6 md:p-8 flex flex-col items-center text-center bg-[#1e3a8a] text-white relative bg-[radial-gradient(#ffffff22_1px,transparent_1px)] [background-size:16px_16px]">
                   <div className="mb-4 w-24 h-24 p-2 rounded-full bg-white/10 flex items-center justify-center">
                       <Image src="https://picsum.photos/seed/logo-dark/100" alt="Madnus Construction Company Logo" width={80} height={80} className="rounded-full" data-ai-hint="logo construction" />
                   </div>
@@ -47,7 +47,7 @@ export default function BrochurePage() {
                 </div>
 
                 {/* Panel 3 */}
-                <div className="p-6 md:p-8 bg-[#1e3a8a] text-white flex flex-col items-center">
+                <div className="p-6 md:p-8 bg-[#1e3a8a] text-white flex flex-col items-center relative bg-[radial-gradient(#ffffff22_1px,transparent_1px)] [background-size:16px_16px]">
                    <Image
                     src="https://picsum.photos/seed/ai-chip/400"
                     alt="AI Chip"
