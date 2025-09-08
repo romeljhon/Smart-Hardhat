@@ -46,26 +46,28 @@ export function Resources() {
               Everything you need to know about the Smart Hardhat, all in one place.
             </p>
         </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:[&>*:nth-child(4)]:col-start-2">
-          {resourcesData.map((resource, index) => (
-            <Card key={index} className="bg-secondary border-border/60 flex flex-col">
-              <CardContent className="p-6 flex-grow flex flex-col text-center items-center">
-                <div className="flex-grow">
-                  <div className="flex justify-center mb-4">{resource.icon}</div>
-                  <h3 className="font-headline text-xl text-white mb-2">{resource.title}</h3>
-                  <p className="text-muted-foreground">{resource.description}</p>
-                </div>
-                <div className="mt-auto pt-6 w-full">
-                  <Link href={resource.href} className='w-full'>
-                    <Button variant="outline" className="w-full">
-                      <Eye className="mr-2 h-4 w-4" />
-                      View
-                    </Button>
-                  </Link>
-                </div>
-              </CardContent>
-            </Card>
-          ))}
+        <div className="flex justify-center">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {resourcesData.map((resource, index) => (
+                <Card key={index} className="bg-secondary border-border/60 flex flex-col">
+                  <CardContent className="p-6 flex-grow flex flex-col text-center items-center">
+                    <div className="flex-grow">
+                      <div className="flex justify-center mb-4">{resource.icon}</div>
+                      <h3 className="font-headline text-xl text-white mb-2">{resource.title}</h3>
+                      <p className="text-muted-foreground">{resource.description}</p>
+                    </div>
+                    <div className="mt-auto pt-6 w-full">
+                      <Link href={resource.href} className='w-full'>
+                        <Button variant="outline" className="w-full">
+                          <Eye className="mr-2 h-4 w-4" />
+                          View
+                        </Button>
+                      </Link>
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
         </div>
       </div>
     </section>
