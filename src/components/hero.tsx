@@ -8,7 +8,7 @@ export function Hero() {
     <section className="relative w-full h-screen flex items-center justify-center bg-background overflow-hidden">
       <div className="absolute inset-0">
         <Image
-          src="https://images.unsplash.com/photo-1519756301029-33921415ba28?q=80&w=1920&h=1080&fit=crop"
+          src="/img/r1.png"
           alt="Construction background"
           fill
           className="object-cover"
@@ -52,7 +52,7 @@ export function Hero() {
               <div className="absolute -top-8 -left-8 w-[60%] h-[60%]">
                  <div className="relative w-full h-full transform rotate-15">
                     <Image
-                      src="https://images.unsplash.com/photo-1525983334256-17b0164a66a7?q=80&w=600&h=450&fit=crop"
+                      src="/img/r3.jpg"
                       alt="Construction worker"
                       fill
                       className="object-cover rounded-3xl shadow-2xl"

@@ -1,6 +1,6 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Video, Camera, FileText, BookOpen, Wrench, Download } from 'lucide-react';
+import { Video, Camera, FileText, BookOpen, Wrench, Eye } from 'lucide-react';
 import Link from 'next/link';
 
 const resourcesData = [
@@ -60,7 +60,7 @@ export function Resources() {
                 <div className="mt-auto pt-4">
                   <Link href={resource.href} className='w-full'>
                     <Button variant="outline" className="w-full">
-                      <Download className="mr-2 h-4 w-4" />
+                      <Eye className="mr-2 h-4 w-4" />
                       View
                     </Button>
                   </Link>
