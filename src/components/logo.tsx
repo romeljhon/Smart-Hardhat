@@ -1,5 +1,5 @@
-import { Rocket } from "lucide-react";
+import { HardHat } from "lucide-react";
 
 export function Logo({ className }: { className?: string }) {
-  return <Rocket className={className} />;
+  return <HardHat className={className} />;
 }
