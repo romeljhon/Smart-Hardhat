@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import { SmartAIHardhatLogo } from '@/components/smart-ai-hardhat-logo';
 
 export function Hero() {
   return (
