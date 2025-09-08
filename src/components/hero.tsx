@@ -30,7 +30,6 @@ export function Hero() {
             <h1 className="text-7xl md:text-8xl font-extrabold tracking-tighter">
               SMART HARDHAT
             </h1>
-            <p className="text-lg text-gray-300 font-light tracking-widest mt-4">SWIPE SLIDE</p>
           </div>
 
           <div className="relative flex justify-center items-center h-full">
