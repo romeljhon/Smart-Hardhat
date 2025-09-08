@@ -46,7 +46,7 @@ export function Resources() {
               Everything you need to know about the Smart Hardhat, all in one place.
             </p>
         </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:[&>*:nth-child(4)]:col-start-2">
           {resourcesData.map((resource, index) => (
             <Card key={index} className="bg-secondary border-border/60 flex flex-col">
               <CardContent className="p-6 flex-grow flex flex-col text-center items-center">
