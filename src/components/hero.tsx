@@ -1,7 +1,6 @@
 'use client';
 
 import Image from 'next/image';
-import { SmartAIHardhatLogo } from '@/components/smart-ai-hardhat-logo';
 
 export function Hero() {
   return (
@@ -34,7 +33,13 @@ export function Hero() {
 
           <div className="relative flex justify-center items-center h-full">
             <div className="absolute top-0 right-0 -mt-16 -mr-16">
-              <SmartAIHardhatLogo className="w-48 h-48" />
+              <Image 
+                src="/r.png" 
+                alt="Smart AI Hardhat Logo" 
+                width={192} 
+                height={192}
+                className="w-48 h-48"
+              />
             </div>  
 
             <div className="relative w-full aspect-[4/3] mt-24">
