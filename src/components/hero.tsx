@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import { Button } from '@/components/ui/button';
 
 export function Hero() {
   return (
@@ -14,7 +13,6 @@ export function Hero() {
             <p className="text-lg md:text-xl text-muted-foreground">
               The Future of Jobsite Safety is Here. The Smart Hardhat is a revolutionary piece of personal protective equipment designed for the modern construction and industrial workforce.
             </p>
-            <Button size="lg">Request a Demo</Button>
           </div>
           <div>
             <Image

@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
 import { Logo } from "@/components/logo";
 
 export function Header() {
@@ -14,7 +13,6 @@ export function Header() {
           <span className="font-headline font-bold text-white">Smart Hardhat</span>
         </Link>
       </nav>
-      <Button>Request a Demo</Button>
     </header>
   );
 }
