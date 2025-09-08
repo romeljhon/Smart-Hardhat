@@ -1,31 +1,75 @@
+'use client';
+
 import Image from 'next/image';
+import { SmartAIHardhatLogo } from '@/components/smart-ai-hardhat-logo';
 
 export function Hero() {
   return (
-    <section className="relative bg-background py-20 md:py-32">
-      <div className="container mx-auto px-4 md:px-6">
+    <section className="relative w-full h-screen flex items-center justify-center bg-background overflow-hidden">
+      <div className="absolute inset-0">
+        <Image
+          src="https://picsum.photos/seed/construction-bg/1920/1080"
+          alt="Construction background"
+          fill
+          className="object-cover"
+          data-ai-hint="construction site background"
+        />
+        <div className="absolute inset-0 bg-blue-900/80"></div>
+      </div>
+      
+      <div className="absolute inset-0 bg-primary/90 clip-path-hero-right"></div>
+
+      <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="grid md:grid-cols-2 gap-8 items-center">
-          <div className="space-y-6 text-center md:text-left">
-            <h1 className="text-4xl md:text-6xl font-headline font-bold text-white uppercase tracking-wider">
-              Work Smarter, <br />
-              <span className="text-primary">Not Harder.</span>
+          <div className="space-y-4 text-white">
+            <h2 className="text-2xl font-bold tracking-[0.2em] uppercase relative pl-16">
+              <span className="absolute left-0 top-1/2 -translate-y-1/2 h-1 w-12 bg-primary"></span>
+              Madnus Construction Company
+            </h2>
+            <p className="text-xl text-primary font-bold tracking-widest">BUILDING THE FUTURE:</p>
+            <h1 className="text-7xl md:text-8xl font-extrabold tracking-tighter">
+              SMART HARDHAT
             </h1>
-            <p className="text-lg md:text-xl text-muted-foreground">
-              The Future of Jobsite Safety is Here. The Smart Hardhat is a revolutionary piece of personal protective equipment designed for the modern construction and industrial workforce.
-            </p>
+            <p className="text-lg text-gray-300 font-light tracking-widest mt-4">SWIPE SLIDE</p>
           </div>
-          <div>
-            <Image
-              src="https://picsum.photos/seed/hardhat-hero/800/600"
-              alt="Smart Hardhat"
-              width={800}
-              height={600}
-              className="rounded-lg shadow-2xl"
-              data-ai-hint="hardhat technology"
-            />
+
+          <div className="relative flex justify-center items-center h-full">
+            <div className="absolute top-0 right-0 -mt-16 -mr-16">
+              <SmartAIHardhatLogo className="w-48 h-48" />
+            </div>
+
+            <div className="relative w-full aspect-[4/3] mt-24">
+               <div className="absolute -bottom-8 -right-8 w-[70%] h-[70%]">
+                 <div className="relative w-full h-full transform -rotate-15">
+                    <Image
+                      src="https://picsum.photos/seed/workers-group/600/450"
+                      alt="Construction workers group"
+                      fill
+                      className="object-cover rounded-3xl shadow-2xl"
+                      data-ai-hint="construction workers group"
+                    />
+                 </div>
+              </div>
+              <div className="absolute -top-8 -left-8 w-[60%] h-[60%]">
+                 <div className="relative w-full h-full transform rotate-15">
+                    <Image
+                      src="https://picsum.photos/seed/worker-rebar/600/450"
+                      alt="Construction worker with rebar"
+                      fill
+                      className="object-cover rounded-3xl shadow-2xl"
+                      data-ai-hint="construction worker rebar"
+                    />
+                 </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+      <style jsx>{`
+        .clip-path-hero-right {
+          clip-path: polygon(60% 0, 100% 0, 100% 100%, 40% 100%);
+        }
+      `}</style>
     </section>
   );
 }
