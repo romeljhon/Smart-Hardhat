@@ -3,13 +3,14 @@ import { Button } from '@/components/ui/button';
 import { Video, Camera, FileText, BookOpen, Wrench, Eye } from 'lucide-react';
 import Link from 'next/link';
 
-const resourcesData = [
-  {
-    icon: <Video className="h-8 w-8 text-primary" />,
-    title: 'Promotional Video',
-    description: 'Watch our promo video to see the Smart Hardhat in action.',
-    href: '/resources/promotional-video',
-  },
+const videoResource = {
+  icon: <Video className="h-8 w-8 text-primary" />,
+  title: 'Promotional Video',
+  description: 'Watch our promo video to see the Smart Hardhat in action.',
+  href: '/resources/promotional-video',
+};
+
+const otherResourcesData = [
   {
     icon: <Camera className="h-8 w-8 text-primary" />,
     title: 'Product Photos',
@@ -46,9 +47,33 @@ export function Resources() {
               Everything you need to know about the Smart Hardhat, all in one place.
             </p>
         </div>
-        <div className="flex justify-center">
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {resourcesData.map((resource, index) => (
+
+        <div className="flex flex-col items-center gap-12">
+          {/* Promotional Video Card */}
+          <div className="w-full lg:w-2/3">
+            <Card className="bg-secondary border-border/60 flex flex-col">
+              <CardContent className="p-6 flex-grow flex flex-col text-center items-center">
+                <div className="flex-grow">
+                  <div className="flex justify-center mb-4">{videoResource.icon}</div>
+                  <h3 className="font-headline text-xl text-white mb-2">{videoResource.title}</h3>
+                  <p className="text-muted-foreground">{videoResource.description}</p>
+                </div>
+                <div className="mt-auto pt-6 w-full">
+                  <Link href={videoResource.href} className='w-full'>
+                    <Button variant="outline" className="w-full">
+                      <Eye className="mr-2 h-4 w-4" />
+                      View
+                    </Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* Other Resources Grid */}
+          <div className="flex justify-center">
+            <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+              {otherResourcesData.map((resource, index) => (
                 <Card key={index} className="bg-secondary border-border/60 flex flex-col">
                   <CardContent className="p-6 flex-grow flex flex-col text-center items-center">
                     <div className="flex-grow">
@@ -68,7 +93,9 @@ export function Resources() {
                 </Card>
               ))}
             </div>
+          </div>
         </div>
+
       </div>
     </section>
   );
