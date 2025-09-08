@@ -13,6 +13,11 @@ export function Header() {
           <span className="font-headline font-bold text-white">Smart Hardhat</span>
         </Link>
       </nav>
+      <nav className="flex items-center gap-6 text-sm">
+          <Link href="/" className="text-muted-foreground transition-colors hover:text-white">Home</Link>
+          <Link href="/about" className="text-muted-foreground transition-colors hover:text-white">About</Link>
+          <Link href="/contact" className="text-muted-foreground transition-colors hover:text-white">Contact</Link>
+      </nav>
     </header>
   );
 }
