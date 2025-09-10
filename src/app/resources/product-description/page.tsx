@@ -1,3 +1,4 @@
+
 import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -13,7 +14,7 @@ export default function ProductDescriptionPage() {
               <CardTitle className="text-3xl font-headline text-white">Full Product Description</CardTitle>
             </CardHeader>
             <CardContent className="space-y-6 text-muted-foreground">
-              <p className="text-lg">The Smart Hardhat is a revolutionary piece of personal protective equipment designed for the modern construction and industrial workforce. It integrates advanced technology to provide unparalleled safety and hands-free assistance, even in environments without internet connectivity. By leveraging on-device AI, it offers real-time monitoring and hazard detection to keep workers safe and productive.</p>
+              <p className="text-lg">The Smart Hardhat Powered by AI Offline is an innovative personal protective equipment (PPE) designed to enhance worker safety and productivity in hazardous environments without relying on continuous internet connectivity. Combining robust physical protection with advanced artificial intelligence capabilities, this smart hardhat offers real-time hazard detection, hands-free assistance, and enhanced visibility features — all operating offline for reliable performance in remote or connectivity-challenged sites.</p>
               
               <div>
                 <h3 className="text-xl font-bold pt-4 text-white">Advanced Technology for Unmatched Safety</h3>
