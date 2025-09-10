@@ -37,7 +37,7 @@ export default function ProductDescriptionPage() {
             <CardContent className="space-y-8 text-muted-foreground">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <Image
-                  src="https://picsum.photos/seed/hardhat-iso/600/400"
+                  src="/img/447fc889-1481-43e6-8915-f2326d4fcc07.jpeg"
                   alt="Smart Hardhat Isometric View"
                   width={600}
                   height={400}
@@ -45,7 +45,7 @@ export default function ProductDescriptionPage() {
                   data-ai-hint="isometric hardhat"
                 />
                 <Image
-                  src="https://picsum.photos/seed/hardhat-ortho/600/400"
+                  src="/img/e386f2cb-edf4-4bd4-9f8e-566899e4a867.jpeg"
                   alt="Smart Hardhat Orthographic View"
                   width={600}
                   height={400}
