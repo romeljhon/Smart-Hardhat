@@ -112,7 +112,7 @@ export default function BrochurePage() {
                   {/* Business model graphic pulled from uploaded PNG (place file in /public) */}
                   <div className="rounded-lg overflow-hidden border border-border/50 bg-white">
                     <Image
-                      src="/img/businessmodel.png"
+                      src="/img/Screenshot_10-9-2025_212951_www.canva.com.jpeg"
                       alt="Business Model, Manual, Maintenance and Solutions Brochure"
                       width={1200}
                       height={850}
