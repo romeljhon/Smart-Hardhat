@@ -2,6 +2,7 @@ import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function BrochurePage() {
   return (
@@ -142,16 +143,12 @@ export default function BrochurePage() {
                       <li>
                         <span className="font-semibold">Using the Voice Command Flashlight:</span> To turn on the flashlight, say the activation command (e.g., “Turn on light”). To turn it off, say the deactivation command (e.g., “Turn off light”). The flashlight will respond instantly, allowing you to keep your hands free.
                       </li>
-                      <li>
-                        <span className="font-semibold">Receiving Hazard Alerts:</span> If the sensors detect a potential danger, the hardhat will alert you through sound, vibration, or flashing lights. Pay attention to the alerts and take appropriate safety actions immediately.
-                      </li>
-<li>
-                        <span className="font-semibold">During Work:</span> Continue wearing the hardhat throughout your shift for continuous protection. Use voice commands as needed to control the flashlight or other supported features.
-                      </li>
-                      <li>
-                        <span className="font-semibold">Charging & Maintenance:</span> After your shift, recharge the battery to ensure the hardhat is ready for the next use. Clean the face shield and helmet shell regularly to maintain visibility and hygiene. Inspect the hardhat for any damage and report issues promptly.
-                      </li>
                   </ol>
+                  <div className="text-right mt-2">
+                    <Link href="/resources/user-manual" className="text-primary hover:underline text-sm">
+                      ...see more
+                    </Link>
+                  </div>
 
                   <div className="mt-8 border-t border-white/30 pt-6">
                     <h3 className="text-2xl font-bold mb-3">Maintenance:</h3>
