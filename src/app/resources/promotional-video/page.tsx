@@ -1,3 +1,4 @@
+
 import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -13,8 +14,13 @@ export default function PromotionalVideoPage() {
               <CardTitle className="text-3xl font-headline text-white">Promotional Video</CardTitle>
             </CardHeader>
             <CardContent>
-              <div className="aspect-video bg-muted rounded-lg flex items-center justify-center">
-                <p className="text-muted-foreground">Video player will be here.</p>
+              <div className="aspect-video bg-muted rounded-lg overflow-hidden">
+                <video
+                  className="w-full h-full object-cover"
+                  src="/video/promo.mp4"
+                  controls
+                  playsInline
+                />
               </div>
             </CardContent>
           </Card>
