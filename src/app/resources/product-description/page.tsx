@@ -3,6 +3,7 @@ import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function ProductDescriptionPage() {
   const keyFunctionalities = [
@@ -34,6 +35,25 @@ export default function ProductDescriptionPage() {
               <CardTitle className="text-3xl font-headline text-white">Full Product Description</CardTitle>
             </CardHeader>
             <CardContent className="space-y-8 text-muted-foreground">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <Image
+                  src="https://picsum.photos/seed/hardhat-iso/600/400"
+                  alt="Smart Hardhat Isometric View"
+                  width={600}
+                  height={400}
+                  className="rounded-lg shadow-lg w-full"
+                  data-ai-hint="isometric hardhat"
+                />
+                <Image
+                  src="https://picsum.photos/seed/hardhat-ortho/600/400"
+                  alt="Smart Hardhat Orthographic View"
+                  width={600}
+                  height={400}
+                  className="rounded-lg shadow-lg w-full"
+                  data-ai-hint="side profile hardhat"
+                />
+              </div>
+
               <div className="space-y-4">
                 <h3 className="text-xl font-bold text-white">Description</h3>
                 <p className="text-lg">
