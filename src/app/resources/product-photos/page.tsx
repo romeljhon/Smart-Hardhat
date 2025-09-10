@@ -16,7 +16,7 @@ export default function ProductPhotosPage() {
             <CardContent>
               <div className="w-full aspect-[8.5/11] rounded-lg overflow-hidden">
                 <iframe
-                  src="/Madnus_smart_Hard-hat.pdf"
+                  src="/pdf/Madnus smart Hard-hat.pdf"
                   className="w-full h-full"
                   title="Madnus Smart Hard-hat PDF"
                 />
