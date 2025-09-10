@@ -2,7 +2,6 @@
 import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import Image from 'next/image';
 
 export default function ProductPhotosPage() {
   return (
@@ -14,27 +13,12 @@ export default function ProductPhotosPage() {
             <CardHeader>
               <CardTitle className="text-3xl font-headline text-white">Madnus smart Hard-hat</CardTitle>
             </CardHeader>
-            <CardContent className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div>
-                <h3 className="text-xl font-bold mb-4 text-white">Isometric</h3>
-                <Image
-                  src="/img/447fc889-1481-43e6-8915-f2326d4fcc07.jpeg"
-                  alt="Smart Hardhat Isometric View"
-                  width={600}
-                  height={400}
-                  className="rounded-lg shadow-lg"
-                  data-ai-hint="isometric hardhat"
-                />
-              </div>
-              <div>
-                <h3 className="text-xl font-bold mb-4 text-white">Orthographic</h3>
-                <Image
-                  src="/img/e386f2cb-edf4-4bd4-9f8e-566899e4a867.jpeg"
-                  alt="Smart Hardhat Orthographic View"
-                  width={600}
-                  height={400}
-                  className="rounded-lg shadow-lg"
-                  data-ai-hint="side profile hardhat"
+            <CardContent>
+              <div className="w-full aspect-[8.5/11] rounded-lg overflow-hidden">
+                <iframe
+                  src="/Madnus_smart_Hard-hat.pdf"
+                  className="w-full h-full"
+                  title="Madnus Smart Hard-hat PDF"
                 />
               </div>
             </CardContent>
