@@ -2,8 +2,28 @@
 import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import Link from 'next/link';
 
 export default function ProductDescriptionPage() {
+  const keyFunctionalities = [
+    {
+      title: 'Hazard Detection',
+      description: 'Sensors monitor the environment and detect dangers using on-device AI.',
+    },
+    {
+      title: 'Instant Alerts',
+      description: 'Audible, vibration, or visual warnings notify the wearer of hazards immediately.',
+    },
+    {
+      title: 'Voice-Controlled Flashlight',
+      description: 'Hands-free activation of the LED flashlight via simple voice commands.',
+    },
+    {
+      title: 'Comfortable Fit',
+      description: 'Adjustable straps and padding ensure secure, all-day comfort.',
+    },
+  ];
+
   return (
     <div className="flex min-h-screen w-full flex-col bg-background text-foreground">
       <Header />
@@ -13,8 +33,39 @@ export default function ProductDescriptionPage() {
             <CardHeader>
               <CardTitle className="text-3xl font-headline text-white">Full Product Description</CardTitle>
             </CardHeader>
-            <CardContent className="space-y-6 text-muted-foreground">
-              <p className="text-lg">The Smart Hardhat Powered by AI Offline is an innovative personal protective equipment (PPE) designed to enhance worker safety and productivity in hazardous environments without relying on continuous internet connectivity. Combining robust physical protection with advanced artificial intelligence capabilities, this smart hardhat offers real-time hazard detection, hands-free assistance, and enhanced visibility features — all operating offline for reliable performance in remote or connectivity-challenged sites.</p>
+            <CardContent className="space-y-8 text-muted-foreground">
+              <div className="space-y-4">
+                <h3 className="text-xl font-bold text-white">Description</h3>
+                <p className="text-lg">
+                  The Smart Hardhat is designed to provide real-time safety monitoring and hands-free assistance to workers in hazardous environments, all without relying on internet connectivity. It integrates advanced sensors, AI-powered hazard detection, and voice-activated controls to enhance protection and convenience.
+                </p>
+              </div>
+
+              <div className="space-y-4">
+                <h3 className="text-xl font-bold text-white">Video Link</h3>
+                <Link
+                  href="https://youtu.be/Cx03spcHtUk"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary hover:underline"
+                >
+                  https://youtu.be/Cx03spcHtUk
+                </Link>
+              </div>
+
+              <div className="space-y-4">
+                <h3 className="text-xl font-bold text-white">Key Functionalities</h3>
+                <ul className="space-y-4">
+                  {keyFunctionalities.map((item) => (
+                    <li key={item.title}>
+                      <p className="font-bold text-white/90">
+                        {item.title}:{' '}
+                        <span className="font-normal text-muted-foreground">{item.description}</span>
+                      </p>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </CardContent>
           </Card>
         </div>
