@@ -15,12 +15,13 @@ export default function PromotionalVideoPage() {
             </CardHeader>
             <CardContent>
               <div className="aspect-video bg-muted rounded-lg overflow-hidden">
-                <video
-                  className="w-full h-full object-cover"
-                  src="/video/promo.mp4"
-                  controls
-                  playsInline
-                />
+                <iframe
+                  className="w-full h-full"
+                  src="https://www.youtube.com/embed/Cx03spcHtUk"
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                ></iframe>
               </div>
             </CardContent>
           </Card>
