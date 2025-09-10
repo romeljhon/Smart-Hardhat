@@ -133,30 +133,24 @@ export default function BrochurePage() {
                   </h2>
 
                   <ol className="list-decimal list-inside space-y-3 text-sm leading-relaxed">
-                    <li>
-                      <span className="font-semibold">Initial Setup:</span> Charge the
-                      hardhat, adjust straps/padding, press the device power button.
-                    </li>
-                    <li>
-                      <span className="font-semibold">Activating the Hardhat:</span> AI
-                      system initializes and begins reading sensor data.
-                    </li>
-                    <li>
-                      <span className="font-semibold">Voice Command Flashlight:</span> say
-                      “turn on light”; “turn off light” to disable.
-                    </li>
-                    <li>
-                      <span className="font-semibold">Receiving Hazard Alerts:</span> sound,
-                      vibration, and flashing lights warn you to take action.
-                    </li>
-                    <li>
-                      <span className="font-semibold">During Work:</span> keep wearing the
-                      hardhat; use voice commands for supported features.
-                    </li>
-                    <li>
-                      <span className="font-semibold">Charging & Maintenance:</span> recharge
-                      after shift; inspect visor, shell, and sensors.
-                    </li>
+                      <li>
+                        <span className="font-semibold">Initial Setup:</span> Charge the hardhat’s built-in battery fully using the provided USB charger. Adjust the straps and padding to fit comfortably on your head. Power on the device using the designated button.
+                      </li>
+                      <li>
+                        <span className="font-semibold">Activating the Hardhat:</span> Once powered on, the AI system initializes and begins monitoring sensor data immediately. The face shield can be lowered or raised as needed.
+                      </li>
+                      <li>
+                        <span className="font-semibold">Using the Voice Command Flashlight:</span> To turn on the flashlight, say the activation command (e.g., “Turn on light”). To turn it off, say the deactivation command (e.g., “Turn off light”). The flashlight will respond instantly, allowing you to keep your hands free.
+                      </li>
+                      <li>
+                        <span className="font-semibold">Receiving Hazard Alerts:</span> If the sensors detect a potential danger, the hardhat will alert you through sound, vibration, or flashing lights. Pay attention to the alerts and take appropriate safety actions immediately.
+                      </li>
+<li>
+                        <span className="font-semibold">During Work:</span> Continue wearing the hardhat throughout your shift for continuous protection. Use voice commands as needed to control the flashlight or other supported features.
+                      </li>
+                      <li>
+                        <span className="font-semibold">Charging & Maintenance:</span> After your shift, recharge the battery to ensure the hardhat is ready for the next use. Clean the face shield and helmet shell regularly to maintain visibility and hygiene. Inspect the hardhat for any damage and report issues promptly.
+                      </li>
                   </ol>
 
                   <div className="mt-8 border-t border-white/30 pt-6">
@@ -270,4 +264,3 @@ export default function BrochurePage() {
     </div>
   );
 }
-
